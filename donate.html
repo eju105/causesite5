@@ -18,6 +18,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script src="js/respond.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../src/jquery.boilerplate.js"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -43,6 +45,23 @@
 	      </div>
 	    </nav>
 
+	    <div id="element"></div>
+		<script>
+			$( function() {
+				$( "#element" ).defaultPluginName( {
+					propertyName: "a custom value"
+				} );
+			} );
+		</script>
+
+		<p id="demo"></p>
+
+		<script>
+		var d = new Date();
+		document.getElementById("demo").innerHTML = d.toString();
+		</script>
+
+
 		<div class="container">
 			<div class="row">
 			    <div class="jumbotron">
@@ -55,6 +74,16 @@
 				</div>
 		</div>
 		</div>
+
+		<div id="element"></div>
+		<script>
+			$( function() {
+				$( "#element" ).defaultPluginName( {
+					propertyName: "a custom value"
+				} );
+			} );
+		</script>
+
 
 		<div class="container">	
 			<div class="row">
@@ -79,83 +108,44 @@
 			</div>
 		</div>
 
-					<div class="container" style="border-style:solid; color: rgb(157, 229, 179); border-width:1;>	<div class="row">
-							<div class="col-md-6">
-								<div class="page-header">
-								  <h1>Almost at Our Goal!! <small>Our goal is to donate 1 million bicycles.  Please donate a bicycle or send cash by clicking the buttons below.</small></h1>
-								</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-6">
-								<div class="progress">
-								  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-								    <span class="sr-only">45% Complete</span>
-								  </div>
-								</div>
-							</div>
-						</div>
+		<div class="container" style="border-style:solid; color: rgb(157, 229, 179); border-width:1;>	<div class="row">
+				<div class="col-md-6">
+					<div class="page-header">
+					  <h1>Almost at Our Goal!! <small>Our goal is to donate 1 million bicycles.  Please donate a bicycle or send cash by clicking the buttons below.</small></h1>
 					</div>
+			</div>
 
-					<div class="container" style="border-style:solid; color: rgb(157, 229, 179); border-width:1;>
-							<div class="row">
-								<section class="col-md-6">
-									<iframe src="https://player.vimeo.com/video/85770708" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-									<p><a href="https://vimeo.com/85770708">Bicycle.mp4</a> from <a href="https://vimeo.com/markedphotography">Mark Goodwin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-								</section>
-								<section class="col-md-2">
-									<P>
-										
-
-
-									</P>                                                            
-								</section>
-								<section class="col-md-4">
-									<p>Why Is Bicycle Safety So Important?
-									Bike riding is a lot of fun, but accidents happen. The safest way to use your bike is for transportation, not play. Every year, about 300,000 kids go to the emergency department because of bike injuries, and at least 10,000 kids have injuries that require a few days in the hospital. Some of these injuries are so serious that children die, usually from head injuries.
-
-									A head injury can mean brain injury. That's why it's so important to wear your bike helmet. Wearing one doesn't mean you can be reckless, but a helmet will provide some protection for your face, head, and brain in case you fall down.
-
-									What color is your bike helmet?
-									Black
-									Blue
-									Brown
-									Gray
-									Green
-									Orange
-									Pink
-									Purple
-									Red
-									Yellow
-									White
-									I don't have one
-									Vote</p>
-								</section>
-
-							</div>
-						
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress">
+					  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+					    <span class="sr-only">45% Complete</span>
+					  </div>
 					</div>
+				</div>
+			</div>
+		</div>
 
-			<!-- icons for donations -->
-				
-				<div class="container-fluid" border-style:solid; color: rgb(157, 229, 179); border-width:1;>
-					<div class="row">
-						<section class="col-md-4">
-							<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-amex"></i></button></a>
-							<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-diners-club"></i></button></a>
-						</section>
-				
-						<section class="col-md-4">
-							<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-mastercard"></i></button></a>
-							<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-paypal"></i></button></a>
-						</section>
+<!-- icons for donations -->
+	
+	<div class="container-fluid" border-style:solid; color: rgb(157, 229, 179); border-width:1;>
+		<div class="row">
+			<section class="col-md-4">
+				<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-amex"></i></button></a>
+				<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-diners-club"></i></button></a>
+			</section>
+	
+			<section class="col-md-4">
+				<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-mastercard"></i></button></a>
+				<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-paypal"></i></button></a>
+			</section>
 
-						<section class="col-md-4">
-							<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-visa"></i></button></a>
-							<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-discover"></i></button></a>
-				 		</section>
-				 	</div>
-				 </div>	
+			<section class="col-md-4">
+				<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-visa"></i></button></a>
+				<a href="https://www.google.com/"><button style="font-size:24px">Button <i class="fa fa-cc-discover"></i></button></a>
+	 		</section>
+	 	</div>
+	 </div>	
 
 
 
